@@ -1,8 +1,3 @@
-/* Note:
-	* '*' can be used in place of the skill group or sub-skill to set default values
-	* Processing order is 'noInterrupt' > 'chains' > 'abnormals'
-*/
-
 module.exports = {
 	0: { // Warrior
 		1: { // Combo Attack
@@ -3184,6 +3179,7 @@ module.exports = {
 				fixedSpeed: 1,
 				length: 650,
 				distance: 44.86,
+				noInterrupt: [17],
 				noRetry: true,
 			},
 			0: {
@@ -4120,4 +4116,3 @@ module.exports = {
 			}
 		}
 	}
-}
